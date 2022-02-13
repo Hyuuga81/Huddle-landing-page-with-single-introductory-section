@@ -39,14 +39,14 @@ main {
 }
 
 h1 {
-    font-size: 1.65em;
+    font-size: 1.5em;
     color: #fff;
     text-align: center;
     padding-bottom: 26px;
 }
 
 p {
-    font-size: 1.08em;
+    font-size: .85em;
     color: #fff;
     text-align: center;
     line-height: 30px;
@@ -98,6 +98,14 @@ p {
     flex-flow: row wrap;
 }
 
+.button-case {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 button {
     font-size: 1em;
     width: 68%;
@@ -115,8 +123,16 @@ button:hover {
     border: 1px solid hsl(300, 69%, 71%);
 }
 
+.socials-case {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 .socials {
-    width: 46%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,16 +171,25 @@ footer {
 
     /****************** STRUCTURAL STYLES *******************/
 
+    body {
+        background: url("../images/bg-desktop.svg") center no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+    
+
     .container {
         align-items: stretch;
     }
 
     h1 {
         text-align: left;
+        font-size: 2.5em;
     }
     
     p {
         text-align: left;
+        font-size: .95em;
     }
 
     /************************ THE LOGO **********************/
@@ -182,5 +207,24 @@ footer {
         justify-content: center;
     }
 
+    .button-case {
+        justify-content: flex-start;
+    }
 
+    button {
+        width: 201px;
+    }
+
+    .socials-case {
+        padding-top: 25px;
+        justify-content: flex-end;
+    }
+
+    .socials {
+        width: 36%;
+    }
+
+    i {
+        font-size: 1.5em;
+    }
 }
